@@ -1,6 +1,6 @@
-CC = g++ -Wall -Wextra -Werror -std=c++98 -g -o phonebook 
+CC = g++ -Wall -Wextra -Werror -std=c++98 -g -o Zombie 
 
-SRC =  Zombie.cpp main.cpp
+SRC =  Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
 
 NAME = Zombie
 

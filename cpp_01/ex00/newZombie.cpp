@@ -1,21 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amoubare <amoubare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/13 23:45:37 by amoubare          #+#    #+#             */
-/*   Updated: 2023/01/13 23:52:51 by amoubare         ###   ########.fr       */
+/*   Created: 2023/01/13 23:44:11 by amoubare          #+#    #+#             */
+/*   Updated: 2023/01/13 23:55:49 by amoubare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int main()
+void   Zombie::set_name(std::string name)
+{
+    this->name = name;
+}
+Zombie*    newZombie(std::string name)
 {
     Zombie *z;
-    z = newZombie("haha");
-    delete z;
-    z->announce();
+    z = new Zombie;
+    z->set_name(name);
+    return (z);
 }

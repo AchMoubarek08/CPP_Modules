@@ -1,21 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   randomChump.cpp                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amoubare <amoubare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/13 23:45:37 by amoubare          #+#    #+#             */
-/*   Updated: 2023/01/13 23:52:51 by amoubare         ###   ########.fr       */
+/*   Created: 2023/01/13 23:44:31 by amoubare          #+#    #+#             */
+/*   Updated: 2023/01/13 23:47:18 by amoubare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int main()
+void   randomChump(std::string name)
 {
     Zombie *z;
-    z = newZombie("haha");
-    delete z;
+    z = newZombie(name);
     z->announce();
 }

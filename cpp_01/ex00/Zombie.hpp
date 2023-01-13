@@ -10,12 +10,13 @@ class Zombie
     private:
         std::string name;
     public:
-        Zombie();
-        Zombie(std::string name, std::string type);
         ~Zombie();
-        void announce();
-        void set_name(std::string name);
-        void set_type(std::string type);
+        Zombie();
+        Zombie(std::string name);
+        void    announce();
+        void    set_name(std::string name);
 };
+Zombie  *newZombie(std::string name);
+void    randomChump(std::string name);
 
 #endif
